@@ -5,6 +5,7 @@
     End Sub
 
     Private Sub ImportVessel_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        ProgressBar1.Maximum = 100
 
     End Sub
 End Class
