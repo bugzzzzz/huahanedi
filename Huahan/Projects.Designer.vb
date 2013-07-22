@@ -149,7 +149,7 @@ Partial Class Projects
         Me.DataGridView1.Location = New System.Drawing.Point(0, 28)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 23
-        Me.DataGridView1.Size = New System.Drawing.Size(572, 292)
+        Me.DataGridView1.Size = New System.Drawing.Size(660, 346)
         Me.DataGridView1.TabIndex = 1
         '
         'Projects
