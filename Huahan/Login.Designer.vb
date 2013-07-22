@@ -32,33 +32,38 @@ Partial Class Login
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(165, 43)
+        Me.TextBox1.Location = New System.Drawing.Point(124, 26)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(248, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(187, 21)
         Me.TextBox1.TabIndex = 0
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Location = New System.Drawing.Point(65, 76)
+        Me.GroupBox1.Location = New System.Drawing.Point(49, 46)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(438, 139)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(328, 83)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(165, 84)
+        Me.TextBox2.Location = New System.Drawing.Point(124, 50)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(248, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(187, 21)
         Me.TextBox2.TabIndex = 1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(400, 242)
+        Me.Button1.Location = New System.Drawing.Point(300, 145)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(90, 31)
+        Me.Button1.Size = New System.Drawing.Size(68, 19)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "登录"
         Me.Button1.UseVisualStyleBackColor = True
@@ -66,22 +71,22 @@ Partial Class Login
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(61, 18)
+        Me.Label1.Location = New System.Drawing.Point(46, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 20)
+        Me.Label1.Size = New System.Drawing.Size(41, 12)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Label1"
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(567, 303)
+        Me.ClientSize = New System.Drawing.Size(425, 182)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Name = "Login"
         Me.Text = "登录"
         Me.GroupBox1.ResumeLayout(False)
