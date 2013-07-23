@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class loading
+Partial Class Loading
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
@@ -22,7 +22,7 @@ Partial Class loading
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(loading))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Loading))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
@@ -30,12 +30,12 @@ Partial Class loading
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton()
         Me.下货纸ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.装箱明细ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSplitButton2 = New System.Windows.Forms.ToolStripSplitButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.ToolStripSplitButton2 = New System.Windows.Forms.ToolStripSplitButton()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,14 +84,22 @@ Partial Class loading
         '下货纸ToolStripMenuItem
         '
         Me.下货纸ToolStripMenuItem.Name = "下货纸ToolStripMenuItem"
-        Me.下货纸ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.下货纸ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.下货纸ToolStripMenuItem.Text = "下货纸"
         '
         '装箱明细ToolStripMenuItem
         '
         Me.装箱明细ToolStripMenuItem.Name = "装箱明细ToolStripMenuItem"
-        Me.装箱明细ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.装箱明细ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.装箱明细ToolStripMenuItem.Text = "装箱明细"
+        '
+        'ToolStripSplitButton2
+        '
+        Me.ToolStripSplitButton2.Image = CType(resources.GetObject("ToolStripSplitButton2.Image"), System.Drawing.Image)
+        Me.ToolStripSplitButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripSplitButton2.Name = "ToolStripSplitButton2"
+        Me.ToolStripSplitButton2.Size = New System.Drawing.Size(60, 22)
+        Me.ToolStripSplitButton2.Text = "EDI"
         '
         'DataGridView1
         '
@@ -138,15 +146,7 @@ Partial Class loading
         Me.Button2.Text = ">>"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'ToolStripSplitButton2
-        '
-        Me.ToolStripSplitButton2.Image = CType(resources.GetObject("ToolStripSplitButton2.Image"), System.Drawing.Image)
-        Me.ToolStripSplitButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripSplitButton2.Name = "ToolStripSplitButton2"
-        Me.ToolStripSplitButton2.Size = New System.Drawing.Size(60, 22)
-        Me.ToolStripSplitButton2.Text = "EDI"
-        '
-        'loading
+        'Loading
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -157,7 +157,7 @@ Partial Class loading
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "loading"
+        Me.Name = "Loading"
         Me.Text = "装箱"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
