@@ -22,31 +22,31 @@ Partial Class Login
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tb_login_name = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.tb_login_password = New System.Windows.Forms.TextBox()
         Me.Button_Login = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'tb_login_name
         '
-        Me.TextBox1.Location = New System.Drawing.Point(124, 26)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(187, 21)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = "admin"
+        Me.tb_login_name.Location = New System.Drawing.Point(124, 26)
+        Me.tb_login_name.Margin = New System.Windows.Forms.Padding(2)
+        Me.tb_login_name.Name = "tb_login_name"
+        Me.tb_login_name.Size = New System.Drawing.Size(187, 21)
+        Me.tb_login_name.TabIndex = 0
+        Me.tb_login_name.Text = "admin"
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.tb_login_password)
+        Me.GroupBox1.Controls.Add(Me.tb_login_name)
         Me.GroupBox1.Location = New System.Drawing.Point(49, 46)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
@@ -73,14 +73,14 @@ Partial Class Login
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "用户名："
         '
-        'TextBox2
+        'tb_login_password
         '
-        Me.TextBox2.Location = New System.Drawing.Point(124, 50)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(187, 21)
-        Me.TextBox2.TabIndex = 1
+        Me.tb_login_password.Location = New System.Drawing.Point(124, 50)
+        Me.tb_login_password.Margin = New System.Windows.Forms.Padding(2)
+        Me.tb_login_password.Name = "tb_login_password"
+        Me.tb_login_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tb_login_password.Size = New System.Drawing.Size(187, 21)
+        Me.tb_login_password.TabIndex = 1
         '
         'Button_Login
         '
@@ -122,9 +122,9 @@ Partial Class Login
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tb_login_name As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents tb_login_password As System.Windows.Forms.TextBox
     Friend WithEvents Button_Login As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
