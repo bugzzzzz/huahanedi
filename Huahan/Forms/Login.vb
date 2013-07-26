@@ -8,6 +8,7 @@ Public Class Login
 
     Private Sub Login_Disposed(sender As Object, e As System.EventArgs) Handles Me.Disposed
         db.Close()
+
     End Sub
 
     Private Sub Login_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
@@ -31,7 +32,7 @@ Public Class Login
         Me.Visible = False
     End Sub
 
-    Private Function sha1test(str As String) As String
+    Public Function sha1test(str As String) As String
         Dim sha As SHA1
         Dim crypebyte As Byte()
         Dim bytetemp As Byte()

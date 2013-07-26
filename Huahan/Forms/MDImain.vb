@@ -90,6 +90,16 @@ Public Class MDImain
     End Sub
 
     Private Sub MDImain_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
+    End Sub
 
+    Private Sub Menu_Change_Password_Click(sender As System.Object, e As System.EventArgs) Handles Menu_Change_Password.Click
+        ChangePassword.ShowDialog()
+
+    End Sub
+
+    Private Sub 航次管理VToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles 航次管理VToolStripMenuItem.Click
+        Projects.MdiParent = Me
+        Projects.Show()
     End Sub
 End Class
