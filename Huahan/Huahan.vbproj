@@ -150,6 +150,12 @@
     <Compile Include="Forms\Single_Project.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Single_Container.Designer.vb">
+      <DependentUpon>Single_Container.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Single_Container.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\ChangePassword.resx">
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Projects.resx">
       <DependentUpon>Projects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Single_Container.resx">
+      <DependentUpon>Single_Container.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

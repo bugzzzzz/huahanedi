@@ -28,35 +28,38 @@ Partial Class Single_Project
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.tb_chn_name = New System.Windows.Forms.TextBox()
+        Me.dtp_open_date = New System.Windows.Forms.DateTimePicker()
+        Me.dtp_close_date = New System.Windows.Forms.DateTimePicker()
+        Me.dtp_dep_date = New System.Windows.Forms.DateTimePicker()
+        Me.tb_eng_name = New System.Windows.Forms.TextBox()
+        Me.tb_voyage = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.tb_vessel_code = New System.Windows.Forms.TextBox()
+        Me.bt_save = New System.Windows.Forms.Button()
+        Me.bt_cancel = New System.Windows.Forms.Button()
+        Me.bt_auto_get_vessel_code = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Crimson
-        Me.Label1.Location = New System.Drawing.Point(63, 56)
+        Me.Label1.Location = New System.Drawing.Point(24, 25)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 12)
+        Me.Label1.Size = New System.Drawing.Size(79, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "英文船名："
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(63, 86)
+        Me.Label2.Location = New System.Drawing.Point(24, 61)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 12)
+        Me.Label2.Size = New System.Drawing.Size(79, 20)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "中文船名："
         '
@@ -64,9 +67,10 @@ Partial Class Single_Project
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.Crimson
-        Me.Label3.Location = New System.Drawing.Point(63, 116)
+        Me.Label3.Location = New System.Drawing.Point(24, 97)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 12)
+        Me.Label3.Size = New System.Drawing.Size(79, 20)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "出口航次："
         '
@@ -74,137 +78,165 @@ Partial Class Single_Project
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.Crimson
-        Me.Label4.Location = New System.Drawing.Point(63, 206)
+        Me.Label4.Location = New System.Drawing.Point(24, 132)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 12)
+        Me.Label4.Size = New System.Drawing.Size(79, 20)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "离港日期："
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(63, 176)
+        Me.Label5.Location = New System.Drawing.Point(24, 205)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 12)
+        Me.Label5.Size = New System.Drawing.Size(79, 20)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "结关时间："
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(63, 146)
+        Me.Label6.Location = New System.Drawing.Point(24, 169)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 12)
+        Me.Label6.Size = New System.Drawing.Size(79, 20)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "集港时间："
         '
-        'TextBox1
+        'tb_chn_name
         '
-        Me.TextBox1.Location = New System.Drawing.Point(134, 83)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox1.TabIndex = 7
+        Me.tb_chn_name.Location = New System.Drawing.Point(119, 56)
+        Me.tb_chn_name.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tb_chn_name.Name = "tb_chn_name"
+        Me.tb_chn_name.Size = New System.Drawing.Size(265, 26)
+        Me.tb_chn_name.TabIndex = 7
         '
-        'DateTimePicker1
+        'dtp_open_date
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(134, 140)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 21)
-        Me.DateTimePicker1.TabIndex = 9
+        Me.dtp_open_date.Location = New System.Drawing.Point(119, 164)
+        Me.dtp_open_date.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.dtp_open_date.Name = "dtp_open_date"
+        Me.dtp_open_date.Size = New System.Drawing.Size(265, 26)
+        Me.dtp_open_date.TabIndex = 13
         '
-        'DateTimePicker2
+        'dtp_close_date
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(134, 170)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 21)
-        Me.DateTimePicker2.TabIndex = 10
+        Me.dtp_close_date.Location = New System.Drawing.Point(119, 200)
+        Me.dtp_close_date.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.dtp_close_date.Name = "dtp_close_date"
+        Me.dtp_close_date.Size = New System.Drawing.Size(265, 26)
+        Me.dtp_close_date.TabIndex = 15
         '
-        'DateTimePicker3
+        'dtp_dep_date
         '
-        Me.DateTimePicker3.Location = New System.Drawing.Point(134, 200)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(200, 21)
-        Me.DateTimePicker3.TabIndex = 11
+        Me.dtp_dep_date.Location = New System.Drawing.Point(119, 128)
+        Me.dtp_dep_date.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.dtp_dep_date.Name = "dtp_dep_date"
+        Me.dtp_dep_date.Size = New System.Drawing.Size(265, 26)
+        Me.dtp_dep_date.TabIndex = 11
         '
-        'TextBox2
+        'tb_eng_name
         '
-        Me.TextBox2.Location = New System.Drawing.Point(134, 53)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox2.TabIndex = 12
+        Me.tb_eng_name.Location = New System.Drawing.Point(119, 20)
+        Me.tb_eng_name.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tb_eng_name.Name = "tb_eng_name"
+        Me.tb_eng_name.Size = New System.Drawing.Size(265, 26)
+        Me.tb_eng_name.TabIndex = 5
         '
-        'TextBox3
+        'tb_voyage
         '
-        Me.TextBox3.Location = New System.Drawing.Point(134, 113)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox3.TabIndex = 13
+        Me.tb_voyage.Location = New System.Drawing.Point(119, 92)
+        Me.tb_voyage.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tb_voyage.Name = "tb_voyage"
+        Me.tb_voyage.Size = New System.Drawing.Size(265, 26)
+        Me.tb_voyage.TabIndex = 9
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(87, 236)
+        Me.Label7.Location = New System.Drawing.Point(52, 239)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(41, 12)
+        Me.Label7.Size = New System.Drawing.Size(51, 20)
         Me.Label7.TabIndex = 14
         Me.Label7.Text = "船号："
         '
-        'TextBox4
+        'tb_vessel_code
         '
-        Me.TextBox4.Location = New System.Drawing.Point(134, 233)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(200, 21)
-        Me.TextBox4.TabIndex = 15
+        Me.tb_vessel_code.Location = New System.Drawing.Point(119, 236)
+        Me.tb_vessel_code.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tb_vessel_code.Name = "tb_vessel_code"
+        Me.tb_vessel_code.Size = New System.Drawing.Size(265, 26)
+        Me.tb_vessel_code.TabIndex = 17
         '
-        'Button1
+        'bt_save
         '
-        Me.Button1.Location = New System.Drawing.Point(89, 307)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "保存"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.bt_save.Location = New System.Drawing.Point(56, 292)
+        Me.bt_save.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.bt_save.Name = "bt_save"
+        Me.bt_save.Size = New System.Drawing.Size(100, 32)
+        Me.bt_save.TabIndex = 16
+        Me.bt_save.Text = "保存"
+        Me.bt_save.UseVisualStyleBackColor = True
         '
-        'Button2
+        'bt_cancel
         '
-        Me.Button2.Location = New System.Drawing.Point(259, 307)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 17
-        Me.Button2.Text = "取消"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.bt_cancel.Location = New System.Drawing.Point(267, 292)
+        Me.bt_cancel.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.bt_cancel.Name = "bt_cancel"
+        Me.bt_cancel.Size = New System.Drawing.Size(100, 32)
+        Me.bt_cancel.TabIndex = 17
+        Me.bt_cancel.Text = "取消"
+        Me.bt_cancel.UseVisualStyleBackColor = True
         '
-        'Button3
+        'bt_auto_get_vessel_code
         '
-        Me.Button3.Location = New System.Drawing.Point(334, 231)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(18, 23)
-        Me.Button3.TabIndex = 18
-        Me.Button3.Text = "?"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.bt_auto_get_vessel_code.Location = New System.Drawing.Point(383, 236)
+        Me.bt_auto_get_vessel_code.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.bt_auto_get_vessel_code.Name = "bt_auto_get_vessel_code"
+        Me.bt_auto_get_vessel_code.Size = New System.Drawing.Size(25, 26)
+        Me.bt_auto_get_vessel_code.TabIndex = 18
+        Me.bt_auto_get_vessel_code.Text = "?"
+        Me.bt_auto_get_vessel_code.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.SteelBlue
+        Me.Label8.Location = New System.Drawing.Point(392, 20)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(113, 20)
+        Me.Label8.TabIndex = 19
+        Me.Label8.Text = "*请不要输入空格"
         '
         'Single_Project
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(428, 390)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox4)
+        Me.ClientSize = New System.Drawing.Size(523, 358)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.bt_auto_get_vessel_code)
+        Me.Controls.Add(Me.bt_cancel)
+        Me.Controls.Add(Me.bt_save)
+        Me.Controls.Add(Me.tb_vessel_code)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.DateTimePicker3)
-        Me.Controls.Add(Me.DateTimePicker2)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tb_voyage)
+        Me.Controls.Add(Me.tb_eng_name)
+        Me.Controls.Add(Me.dtp_dep_date)
+        Me.Controls.Add(Me.dtp_close_date)
+        Me.Controls.Add(Me.dtp_open_date)
+        Me.Controls.Add(Me.tb_chn_name)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Single_Project"
         Me.Text = "Single_Project"
         Me.ResumeLayout(False)
@@ -217,15 +249,16 @@ Partial Class Single_Project
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DateTimePicker3 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents tb_chn_name As System.Windows.Forms.TextBox
+    Friend WithEvents dtp_open_date As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtp_close_date As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtp_dep_date As System.Windows.Forms.DateTimePicker
+    Friend WithEvents tb_eng_name As System.Windows.Forms.TextBox
+    Friend WithEvents tb_voyage As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents tb_vessel_code As System.Windows.Forms.TextBox
+    Friend WithEvents bt_save As System.Windows.Forms.Button
+    Friend WithEvents bt_cancel As System.Windows.Forms.Button
+    Friend WithEvents bt_auto_get_vessel_code As System.Windows.Forms.Button
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class
