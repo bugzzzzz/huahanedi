@@ -61,7 +61,7 @@ Public Class SQLite1
         Return True
     End Function
 
-    Public Function GetTableData(table_name As String) As Object
+    Public Function GetTableData(table_name As String, Optional ByVal par2 As String = "") As Object
         Dim returndataset As New DataSet
         Dim querystr As String
 
@@ -71,7 +71,7 @@ Public Class SQLite1
             Case "vessel_basic"
                 querystr = "select * from vessel_basic"
             Case "container"
-                querystr = "select * from container"
+                querystr = "select * from container where vessel_id=" & par2
             Case "port_basic"
                 querystr = "select * from port_basic"
             Case Else
@@ -138,12 +138,12 @@ Public Class SQLite1
     Public Sub updatecontainer(dt As DataTable)
         Dim da As New SQLiteDataAdapter("select * from container", db)
         da.InsertCommand = New SQLiteCommand("insert into container(container_no, container_type, container_size, container_owen," & _
-                                             "seal_no, container_weight, total_weight, carrier, hbl_no, dis_port values(@container_no," & _
+                                             "seal_no, container_weight, total_weight, carrier, hbl_no, dis_port, vessel_id) values(@container_no," & _
                                              "@container_type, @container_size, @container_owen, @seal_no, @container_weight," & _
-                                             "@total_weight, @carrier, @hbl_no, @dis_port)", db)
+                                             "@total_weight, @carrier, @hbl_no, @dis_port, @vessel_id)", db)
         da.InsertCommand.Parameters.Add("@container_no", DbType.String, 11, "container_no")
-        da.InsertCommand.Parameters.Add("@container_type", DbType.String, 6, "conatiner_type")
-        da.InsertCommand.Parameters.Add("@container_size", DbType.String, 2, "conatiner_size")
+        da.InsertCommand.Parameters.Add("@container_type", DbType.String, 6, "container_type")
+        da.InsertCommand.Parameters.Add("@container_size", DbType.String, 2, "container_size")
         da.InsertCommand.Parameters.Add("@container_owen", DbType.String, 20, "container_owen")
         da.InsertCommand.Parameters.Add("@seal_no", DbType.String, 20, "seal_no")
         da.InsertCommand.Parameters.Add("@container_weight", DbType.Double, 0, "container_weight")
@@ -151,16 +151,17 @@ Public Class SQLite1
         da.InsertCommand.Parameters.Add("@carrier", DbType.String, 20, "carrier")
         da.InsertCommand.Parameters.Add("@hbl_no", DbType.String, 20, "hbl_no")
         da.InsertCommand.Parameters.Add("@dis_port", DbType.String, 30, "dis_port")
+        da.InsertCommand.Parameters.Add("@vessel_id", DbType.Int32, 0, "vessel_id")
 
         da.DeleteCommand = New SQLiteCommand("delete from container where container_id=@container_id", db)
         da.DeleteCommand.Parameters.Add("@container_id", DbType.Int32, 0, "container_id")
 
         da.UpdateCommand = New SQLiteCommand("update container set container_no=@container_no, container_type=@container_type, container_size=@container_size," & _
-                                             " container_owen=@container_owen, seal_no=@seal_no, container_weight=@container_weight, carrier=@carrier," & _
-                                             " hbl_no=@hbl_no, dis_port=@dis_port", db)
+                                             " container_owen=@container_owen, seal_no=@seal_no, container_weight=@container_weight, total_weight=@total_weight," & _
+                                             "carrier=@carrier, hbl_no=@hbl_no, dis_port=@dis_port, vessel_id=@vessel_id where container_id=@container_id", db)
         da.UpdateCommand.Parameters.Add("@container_no", DbType.String, 11, "container_no")
-        da.UpdateCommand.Parameters.Add("@container_type", DbType.String, 6, "conatiner_type")
-        da.UpdateCommand.Parameters.Add("@container_size", DbType.String, 2, "conatiner_size")
+        da.UpdateCommand.Parameters.Add("@container_type", DbType.String, 6, "container_type")
+        da.UpdateCommand.Parameters.Add("@container_size", DbType.String, 2, "container_size")
         da.UpdateCommand.Parameters.Add("@container_owen", DbType.String, 20, "container_owen")
         da.UpdateCommand.Parameters.Add("@seal_no", DbType.String, 20, "seal_no")
         da.UpdateCommand.Parameters.Add("@container_weight", DbType.Double, 0, "container_weight")
@@ -168,6 +169,8 @@ Public Class SQLite1
         da.UpdateCommand.Parameters.Add("@carrier", DbType.String, 20, "carrier")
         da.UpdateCommand.Parameters.Add("@hbl_no", DbType.String, 20, "hbl_no")
         da.UpdateCommand.Parameters.Add("@dis_port", DbType.String, 30, "dis_port")
+        da.UpdateCommand.Parameters.Add("@vessel_id", DbType.Int32, 0, "vessel_id")
+        da.UpdateCommand.Parameters.Add("@container_id", DbType.Int32, 0, "container_id")
 
         da.Update(dt)
     End Sub

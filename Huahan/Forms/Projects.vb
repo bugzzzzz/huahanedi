@@ -93,7 +93,16 @@ Public Class Projects
         Next
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
+    Private Sub DataGridView1_DoubleClick(sender As Object, e As System.EventArgs) Handles DataGridView1.DoubleClick
+        Dim container_load As New Loading
+        'MessageBox.Show(DataGridView1("id", DataGridView1.CurrentRow.Index).Value.ToString)
+        container_load._vessel_id = DataGridView1("id", DataGridView1.CurrentRow.Index).Value
+        container_load.MdiParent = MDImain
+        container_load.Show()
     End Sub
+
+    Private Sub ToolStripSplitButton2_ButtonClick(sender As System.Object, e As System.EventArgs) Handles ToolStripSplitButton2.ButtonClick
+        ToolStripSplitButton2.ShowDropDown()
+    End Sub
+
 End Class
